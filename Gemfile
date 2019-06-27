@@ -41,6 +41,7 @@ gem 'sprockets', '3.7.2'
 gem 'haml-rails'
 gem 'devise'
 gem 'font-awesome-sass'
+gem 'omniauth'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
