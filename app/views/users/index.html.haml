@@ -1,0 +1,50 @@
+.header
+  .pfm-header
+    %header.header-inner-container
+      .upper-contents
+        %h1.logo
+          =link_to root_path do
+            =image_tag("https://moneyforward.com/assets/header/mf_logo-89b7d92cf89e58343e2efe8b4724f589f7828b99ce64446bececd8eb4fe74e39.png", class: "logo-image", width: 200, height: 35, alt: "無料の家計簿、資産管理ツール　マネーフォワード")
+        %nav.right-nav
+          %ul.menu-items.nav-horizontal
+            %li.menu-item.nav-item
+              =link_to destroy_user_session_path, method: :delete, rel: "nofollow" do
+                ログアウト
+      .global-menu
+        %ul.nav-horizontal
+          %li.global-menu-item.nav-item
+            =link_to root_path, class: "active" do
+              %i.fas.fa-home
+              ホーム
+          %li.global-menu-item.nav-item
+            =link_to root_path do
+              %i.fas.fa-newspaper
+              仕訳
+          %li.global-menu-item.nav-item
+            =link_to root_path do
+              %i.fas.fa-chart-pie
+              財務諸表
+          %li.global-menu-item.nav-item
+            =link_to root_path do
+              %i.fas.fa-piggy-bank
+              口座
+          %li.global-menu-item.nav-item
+            =link_to root_path do
+              %i.fas.fa-cog
+              設定
+.container-large
+  .margin-top-zero{ id: "main-container" }
+    .home{ id: "home" }
+      .clearfix
+        .home-cal-assets
+
+        .mf-cal-custom-home
+          %div{ style: "padding-top: 20px" }
+            .home-manualinput-cfinfo
+              %section{ id: "cf-manual-entry" }
+                %h2.heading-normal{ style: "margin: 0 0 11px" }
+                  カンタン入力
+                %div{ id: "cf-manual-payment-entry" }
+                  .background
+
+        .mf-cal-custom-ad

@@ -1,6 +1,20 @@
 # frozen_string_literal: true
 
 class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
+  def google_oauth2
+    @account = User.find_for_google_oauth2(request.env["omniauth.auth"])
+  
+    if @account.present?
+      # ユーザーをサインイン状態にする
+      sign_in(:social_account, @account)
+      # 自分の詳細情報ページに遷移する
+      binding.pry
+      redirect_to root_path
+      # 認証失敗時
+    else
+      redirect_to root_path
+    end
+  end
   # You should configure your model like this:
   # devise :omniauthable, omniauth_providers: [:twitter]
 

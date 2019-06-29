@@ -16,6 +16,7 @@
     = f.label :password_confirmation
     %br/
     = f.password_field :password_confirmation, autocomplete: "new-password"
+  = link_to 'Googleでサインイン', user_google_oauth2_omniauth_authorize_path
   .actions
     = f.submit "Sign up"
 = render "users/shared/links"

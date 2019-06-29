@@ -1,0 +1,127 @@
+.header{
+  height: 121px;
+  border-bottom: 1px solid #c8c7cc;
+
+  .header-inner-container{
+    margin: 0 auto;
+    width: 1200px;
+
+    .upper-contents{
+      height: 58px;
+    
+      .logo{
+        float: left;
+        padding-top: 12px;
+
+        &-image{
+          width: 260px;
+          height: 34px;
+        }
+      }
+    
+      .right-nav{
+        float: right;
+        display: inline;
+    
+        .nav-horizontal{
+          font-size: 13px;
+          margin: 15px 0 10px;
+    
+          .nav-item{
+            list-style: none;
+            padding: 8px 0 0 20px;
+            margin-left: 2px;
+          }
+        }
+      }
+    }
+
+    .global-menu{
+      height: 50px;
+      margin: 15px 0 10px;
+    
+      .nav-horizontal{
+        font-size: 13px;
+        margin: 15px 0 10px;
+    
+        .nav-item{
+          list-style: none;
+        }
+      }
+    
+      .global-menu-item{
+        position: relative;
+        line-height: 50px;
+        margin-top: 0;
+        float: left;
+        text-align: center;
+        width: 130px;
+    
+        a{
+          display: block;
+          color: $black;
+          height: 50px;
+          box-sizing: border-box;
+          
+          i{
+            color: $gray;
+          }
+        }
+    
+        a.active{
+          color: $orange;
+          border-bottom: 5px solid $orange;
+          text-decoration: none;
+          
+          i{
+            color: $orange;
+            font-size: 17px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.menu-items{
+  .menu-item{
+    a{
+      text-decoration: none;
+      color: $black;
+    }
+  }
+}
+
+.container-large{
+  width: 1200px;
+  margin: 0 auto;
+  
+  #main-container{
+
+    &.margin-top-zero{
+      margin-top: 0;
+    }
+
+    .home-cal-assets{
+      float: left;
+      width: 226px;
+    }
+
+    .mf-cal-custom-home{
+      float: left;
+      margin-left: 30px;
+      width: 614px;
+
+      .home-manualinput-cfinfo{
+        height: 252px;
+        color: $gray;
+      }
+    }
+
+    .mf-cal-custom-ad{
+      margin: 0 0 0 30px;
+      float: left;
+      width: 300px;
+    }
+  }
+}

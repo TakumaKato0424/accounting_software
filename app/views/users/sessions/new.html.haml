@@ -15,3 +15,7 @@
   .actions
     = f.submit "Log in"
 = render "users/shared/links"
+- if user_signed_in?
+  テスト
+- else
+  ダメです
