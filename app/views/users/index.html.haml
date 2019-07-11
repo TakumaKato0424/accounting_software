@@ -10,6 +10,9 @@
             %li.menu-item.nav-item
               =link_to destroy_user_session_path, method: :delete, rel: "nofollow" do
                 ログアウト
+            %li.menu-item.nav-item
+              =link_to new_user_session_path, rel: "nofollow" do
+                サインイン
       .global-menu
         %ul.nav-horizontal
           %li.global-menu-item.nav-item
