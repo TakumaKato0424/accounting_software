@@ -8,7 +8,6 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
       # ユーザーをサインイン状態にする
       sign_in(:social_account, @account)
       # 自分の詳細情報ページに遷移する
-      binding.pry
       redirect_to root_path
       # 認証失敗時
     else
