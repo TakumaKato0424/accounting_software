@@ -6,7 +6,7 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
   
     if @account.present?
       # ユーザーをサインイン状態にする
-      sign_in(:social_account, @account)
+      sign_in(:user, @account)
       # 自分の詳細情報ページに遷移する
       redirect_to root_path
       # 認証失敗時
